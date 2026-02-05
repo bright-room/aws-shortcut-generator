@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AWS Shortcut Generator",
+  "version": "1.0.0",
+  "description": "AWSアクセスポータルのショートカットリンクを生成します",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://*.console.aws.amazon.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://*.console.aws.amazon.com/*"
+  ]
+}

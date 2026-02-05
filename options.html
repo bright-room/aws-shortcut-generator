@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS Shortcut Generator 設定</title>
+  <style>
+    body { padding: 20px; font-family: sans-serif; }
+    .field { margin-bottom: 10px; }
+    label { display: block; margin-bottom: 5px; }
+    input[type="text"] { width: 400px; padding: 5px; }
+    button { padding: 5px 15px; }
+    #status { margin-top: 10px; color: green; }
+  </style>
+</head>
+<body>
+  <h1>設定</h1>
+  <div class="field">
+    <label for="portalUrl">AWSアクセスポータルURL:</label>
+    <input type="text" id="portalUrl" placeholder="https://d-xxxxxxxxxx.awsapps.com/start">
+    <p style="font-size: 0.8em; color: #666;">※末尾の /start はあってもなくても構いません</p>
+  </div>
+  <button id="save">保存</button>
+  <div id="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>
