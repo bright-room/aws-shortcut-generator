@@ -1,0 +1,2 @@
+# aws-shortcut-generator
+AWSのコンソール用ショートカットリンクをワンクリックで生成するためのChrome拡張機能
